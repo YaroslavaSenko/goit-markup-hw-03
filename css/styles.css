@@ -21,6 +21,61 @@ body{
     font-size: 14px;
     }
 
+
+
+ul{
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, p{
+    margin: 0px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+address{
+    font-style: normal;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.section{
+    padding: 94px 0;
+}
+
+.page-header{
+ height: 80px;
+}
+.page-header-portfolio{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--line-color);
+  height: 80px;
+}
+/* conteiner */
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: o 15px;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+    margin: 0px;
+}
+
 /* logo */
 .logo{
     text-decoration: none;
@@ -42,49 +97,11 @@ color: var(--title-text-color);
 .logo-footer{
     color: var(--background-color);
 }
-
-ul{
-    list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
-}
-a{
-    text-decoration: none;
-}
-
-h1, h2{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.page-header{
-    border-bottom-width: 1px;
-   border-bottom-style: solid;
-   border-bottom-color: var(--line-color)
-}
-/* conteiner */
-.conteiner{
-    width: 1200px;
-    margin-left: auto;
-    margin-right:auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
 /* верхня лінія */
 .page-header-conteiner{
 display: flex;
 align-items: center;
-width: 1200px;
-margin-left: auto;
-margin-right: auto;
+
 }
 
 .site-nav{
@@ -92,8 +109,8 @@ margin-right: auto;
     margin-left: 93px;
 }
 .site-nav,.link {
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 32px;
+padding-bottom: 32px;
 
 color: var(--title-text-color);
 text-decoration: none;
@@ -156,14 +173,15 @@ letter-spacing: 0.02em;
 }
 /* шапка */
 .hero{
-    height: 600px;
-    background-color:var(--background-color2)
+    /* height: 600px; */
+    background-color:var(--background-color2);
+    padding: 200px 0;
+    text-align: center;
+    
 }
 .hero-title{
-    display: flex;
-    justify-content: center;
- padding-top: 200px;
- color: var(--background-color);
+
+color: var(--background-color);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -175,12 +193,11 @@ text-decoration: none;
 
 .hero-button{
     display:inline-block;
-    border: 1px solid transparent;
+    border: none;
     border-radius: 4px;
     padding: 10px 32px;
    justify-content: center;
-   position: relative;
-   margin-left: 470px;
+cursor: pointer;
    margin-top: 30px;
 background-color: var(--accent-color);
 color: var(--background-color);
@@ -221,8 +238,7 @@ border: 1px solid transparent;
 .portfolio-button{
     display: flex;
     justify-content: center;
-margin-top: 94px;
-margin-bottom: 38px;
+margin-bottom: 54px;
 }
 
 /* Особливості */
@@ -240,11 +256,7 @@ margin-bottom: 38px;
 }
 .features{
     display: flex;
-    
-    height: 98px;
-    margin-top: 94px;
-    margin-bottom: 94px;
-   justify-content:space-between
+margin: 94px auto;
 }
 .features-list + .features-list{
     margin-left: 30px;
@@ -259,29 +271,18 @@ text-transform: uppercase;
 }
 
 .features-text{
-font-weight: 400;
-font-size: 14px;
 line-height: 1.7;
-letter-spacing: 0.03em;
 }
 
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    margin-bottom: 94px;
-    
 }
 .portfolio-cards{
-    display:flex;
-    flex-wrap: wrap;
     margin-right: 30px;
     margin-bottom: 30px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--line-color);
     width: 370px;
-    height: 404px;
     }
 
 .portfolio-cards:nth-child(3n){
@@ -290,39 +291,36 @@ letter-spacing: 0.03em;
 .portfolio-cards:nth-last-child(-n+3){
     margin-bottom: 30px;
 }
-
-
-.portfolio-img{
-    width: 370px;
+.portfolio-div{
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--line-color);
+    padding: 20px 24px;
 }
 .portfolio-title{
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
-
-    text-decoration: none;
+     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
     color: var(--black-color2);
 }
 .portfolio-text{
-    padding-bottom: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.8;
-letter-spacing: 0.03em;
 text-decoration: none;
 color: var(--primary-text-color);
 }
  /* чим ми займаємось */
-.work-images{
-    justify-content:space-between;
-    margin-bottom: 94px;
-}
+ .work{
+    padding-top: 0;
+ }
+ .work-images{
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+
 .title{
     margin-bottom: 50px;
     color: var(--black-color2);
@@ -339,21 +337,18 @@ color: var(--primary-text-color);
 }
 
 .title-team{
-    padding-top: 94px;
-
-    color: var(--title-text-color);
+     color: var(--title-text-color);
     font-weight: 700;
 font-size: 36px;
-line-height: 1.16px;
+line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 }
 
 .team-list{
-    padding-top: 50px;
-    justify-content: center;
-   padding-bottom: 94px;
-    }
+    display: flex;
+    margin-top: 50px;
+}
  
 .team-images{
        
@@ -365,7 +360,13 @@ background-color: var(--background-color);
 .team-images + .team-images{
 margin-left: 30px;
 }
+.team-person-position{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 .team-person{
+    margin-bottom: 10px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
@@ -378,29 +379,38 @@ color: var(--title-text-color);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
-text-align: center;
+
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
 /* Підвал */
 .address{
+    padding: 94px 0;
+    font-style: normal;
     padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-color2);
 }
-.address-list{
-display: flex;
-justify-content: first baseline;
-padding-top: 20px;
-}
+
 .address-link{
-    padding-top: 9px;
-        font-style: normal;
+  font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 text-decoration: none;
+}
+.address-list{
+    margin-top: 9px;
+}
+.address-top{
+    margin-top: 20px;
+
+}
+
+.address-list + .address-list{
+    margin-top: 9px;
 }
 .mailto{
     color: var(--pictures-color);
